@@ -35,6 +35,12 @@ let isSquare = function(n){
 
 * **2012-2021** Belarusian State Medical University, it engineer
 
+## Languages
+
+* Russian
+* Belorussian
+* English (~A2)
+
 
 
 
