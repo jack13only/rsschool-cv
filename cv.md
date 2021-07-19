@@ -18,5 +18,17 @@ Open to new ideas, ready for self-study, have a desire to drastically change my 
 
 Studied javascript on my own at https://learn.javascript.ru/ 
 
+## Code example
+```
+let isSquare = function(n){
+  if (n < 0) return false;
 
+  let result = Math.sqrt(n) 
+   
+  if (result == Math.trunc(result)) {
+      return true;
+    }
+  return false;
+}
+```
 
