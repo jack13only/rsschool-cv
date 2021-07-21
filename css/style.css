@@ -1,0 +1,63 @@
+html, body {
+    height: 90%;
+  }
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 900px;
+} 
+
+header {
+    margin-top: 30px;
+    height: 150px;
+    width: 900px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: white;
+    background: rgb(0, 225, 255);
+    position: absolute;
+  }
+
+section, article {
+    padding: 180px 20px 0 20px;
+    height: 65vh;
+}
+
+.right-footer, .left-footer {
+    padding: 10px 20px 10px 20px;
+    height: 10vh;
+}
+
+section, .left-footer {
+    width: 30%;
+    margin-left: 30px;
+    background: #c0c0c0;
+    float: left;
+}
+
+article, .right-footer {
+    width: 55%;
+    float: right;
+}
+
+footer {
+    height: 100px;
+    width: 900px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: rgb(255, 0, 55);
+}  
+
+.blue-line {
+    clear: both;
+}
+
+hr {
+    border: none; /* Убираем границу для браузера Firefox */
+    color: rgb(0, 225, 255); /* Цвет линии для остальных браузеров */
+    background-color: rgb(0, 225, 255); /* Цвет линии для браузера Firefox и Opera */
+    height: 10px; /* Толщина линии */
+    margin: 0;
+   }
