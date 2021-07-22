@@ -25,12 +25,12 @@ header {
 
 section, article {
     padding: 180px 20px 0 20px;
-    height: 730px;
+    height: 670px;
 }
 
 .right-footer, .left-footer {
     padding: 5px 20px 5px 20px;
-    height: 7vh;
+    height: 6vh;
 }
 
 section, .left-footer {
@@ -97,13 +97,13 @@ h1 {
 }
 
 .left {
-    margin: 35px 5px 10px 5px;
+    margin: 30px 5px 10px 5px;
 }
 
 pre {
     font-style: italic;  
     background-color: #eee;
-    font-size: 12px; 
+    font-size: 11px; 
     border-radius: 15px;
     padding: 5px 0;
 }
@@ -111,7 +111,7 @@ pre {
 .right {
     border:rgb(0, 225, 255) 3px solid;
     border-radius: 15px;
-    margin: 20px 5px 10px 5px;
+    margin: 10px 5px 10px 5px;
 }
 
 .date {
