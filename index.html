@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Yauheni Shatau</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+
+        
+        <header>
+            <img class="my-photo"
+                 src="/img/my-photo.jpg" 
+                 alt="Моя фотография">
+            <h1>Yauheni Shatau</h1>
+        </header>
+
+
+        <section>
+            <h2 class="left header">Contacts</h2>
+                <ul class="contacts">
+                    <li>Phone: +375 25 9919565</li>
+                    <li>Telegram: @jack13only</li>
+                    <li>E-mail: jack13only@gmail.com</li>
+                </ul>
+
+            <h2 class="left header">Education and Work Experience</h2>
+                <ul>
+                    <li><span class="date">2007 - 2012</span> <p>Belarusian National Technical University, Faculty of Instrumentation, Technical Security</p></li>
+                    <li><span class="date">2012 - 2021</span> <p>Belarusian State Medical University, it engineer</p></li>
+                </ul>
+            
+            <h2 class="left header">Languages</h2>
+                <ul class="languages">
+                    <li>Russian</li>
+                    <li>Belorussian</li>
+                    <li>English (A2)</li>
+                </ul>
+        </section>
+
+        <article>
+            <h3 class="right header">About me</h3>
+                <p>My goal for the next year is to become a front-end developer.</p>
+                <p>Open to new ideas, ready for self-study, have a desire to drastically change my life.</p>
+                <p>Have various hobbies such as drone racing and growing super hot peppers.</p>
+        
+            <h3 class="right header">Skills in programming</h3>
+                <p>Studied javascript on my own on <a href="https://learn.javascript.ru/">learn.javascript.ru</a></p>
+                <p>Solve tasks on <a href="https://www.codewars.com/users/jack13only">www.codewars.com</a></p>  
+                <img src="https://www.codewars.com/users/jack13only/badges/small" alt="codewars rank">
+
+            <h3 class="right header">Code example</h3>
+            <details>
+                <summary>View code example from codewars</summary>
+                <pre>  function anagrams(word, words) {
+    let sortedWord = word.split("").sort().join("");
+    let objSorted = {};
+    let result = [];
+   
+    for (let i = 0; i &lt; words.length; i++) {
+      let sorted = words[i].split("").sort().join("");
+      objSorted[words[i]] = sorted;
+    }
+    
+    for (let key in objSorted) {
+      if (objSorted[key] == sortedWord) {
+      result.push(key)
+      }
+    }
+    return result;
+  }</pre>
+            </details>
+
+        </article>
+
+        <div>
+            <hr class="blue-line">
+        </div>
+
+        <footer>
+            <div class="left-footer">
+                <p><a href="https://rs.school/js/">
+                   <img class="rs-school" 
+                        src="https://rs.school/images/rs_school_js.svg" 
+                        alt="rs_school"></a>
+                </p>
+            </div>
+
+            <div class="right-footer">
+                <p>Creation date <time datetime="2021-07-23">23.07.21</time>
+                   <a href="https://github.com/jack13only">GitHub</a> 
+                </p>
+            </div>
+        </footer>
+
+
+    </div>
+</body>
+</html>

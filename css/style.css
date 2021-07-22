@@ -1,0 +1,132 @@
+html, body {
+    height: 90%;
+    font-size: 16px;
+    font-family: 'Tinos', serif;
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 900px;
+} 
+
+header {
+    margin-top: 30px;
+    height: 150px;
+    width: 900px;
+    letter-spacing: 3px;
+    /* text-align: center; */
+    color: white;
+    background: rgb(0, 225, 255);
+    position: absolute;
+    border-radius: 15px;
+}
+
+section, article {
+    padding: 180px 20px 0 20px;
+    height: 730px;
+}
+
+.right-footer, .left-footer {
+    padding: 5px 20px 5px 20px;
+    height: 7vh;
+}
+
+section, .left-footer {
+    width: 30%;
+    margin-left: 30px;
+    background: #ececec;
+    float: left;
+}
+
+section {
+    border-radius: 15px 15px 0 0;
+}
+
+.left-footer {
+    border-radius: 0px 0px 15px 15px;    
+}
+
+article, .right-footer {
+    width: 55%;
+    float: right;
+}
+
+footer {
+    height: 50px;
+    width: 900px;
+    letter-spacing: 3px;
+    text-align: center;
+}  
+
+.blue-line {
+    clear: both;
+    border: none; 
+    color: rgb(0, 225, 255); 
+    background-color: rgb(0, 225, 255); 
+    height: 10px; 
+    margin: 0;
+    border-radius: 15px;
+   }
+
+h1 {
+    display: inline-block;
+    margin-left: 170px;
+    font-size: 3em;
+    margin-top: -0.625em;
+    position: absolute;
+    top: 50%;
+}  
+
+.my-photo {
+    width: 150px;
+    margin-left: 110px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.rs-school {
+    height: 4vh;
+}
+
+.header {
+    font-size: 30px;
+    text-align: center;
+    margin: 5px;
+}
+
+.left {
+    margin: 35px 5px 10px 5px;
+}
+
+pre {
+    font-style: italic;  
+    background-color: #eee;
+    font-size: 12px; 
+    border-radius: 15px;
+    padding: 5px 0;
+}
+
+.right {
+    border:rgb(0, 225, 255) 3px solid;
+    border-radius: 15px;
+    margin: 20px 5px 10px 5px;
+}
+
+.date {
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+.contacts, .languages {
+    line-height: 200%;
+}
+
+a {
+    color: black;
+}
+
+ul {
+    list-style-type: circle;
+}
