@@ -301,12 +301,13 @@ nav {
 
 .menu-start-item {
     text-align: center;
-    border: 1px black solid
+    border: 1px white solid;
+    color: white;
+    font-weight: 700;
 }
 
 .open {
     color: white;
-    font-weight: 700;
 }
 
 @media screen and (max-width: 1024px) {

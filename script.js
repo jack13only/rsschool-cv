@@ -6,11 +6,11 @@ let interval = 50
 function getMenuList() {
     menu.classList.toggle('open')
     if (menu.classList.contains('open')) {
-        menu.innerHTML = 'Close'
+        menu.innerHTML = 'CLOSE'
         menu.style.border = 'none'
     } else {
-        menu.innerHTML = 'Menu'
-        menu.style.border = '1px black solid'
+        menu.innerHTML = 'MENU'
+        menu.style.border = '1px white solid'
     }    
     menuList.forEach((item, index) => {
         setTimeout(() => {
