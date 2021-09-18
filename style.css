@@ -192,7 +192,7 @@ figcaption {
 
 .pr-wrapper:hover {
     transform: scale(110%);
-    box-shadow: 0 0 10px rgba(63, 217, 255);
+    box-shadow: 0 0 10px rgb(63, 217, 255);
     padding: 10px;
     cursor: pointer;
 }
@@ -249,4 +249,48 @@ footer {
 
 .right-footer > p > a {
     color: black;
+}
+
+nav {
+    transition: 0.3s ease-in-out;
+    position: fixed;
+    right: 8vh;
+    top: 2vh;
+    width: 100px;
+    height: 30px; 
+    text-align: left;
+    z-index: 5;
+}
+
+.menu-box {
+    list-style: none;
+    cursor: pointer;
+}
+
+.menu-box > li {
+    background: rgba(63, 217, 255, 0.722);
+    border: black 1px solid;
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    z-index: 5;
+    padding-left: 10px;
+}
+
+.menu-box > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+.menu-start-item {
+    text-align: center;
+}
+
+.open {
+    color: red;
+    font-weight: 700;
 }
