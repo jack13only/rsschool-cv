@@ -445,7 +445,7 @@ nav {
     }
 
     .wrapper {
-        width: 320px;
+        width: 300px;
     }   
 
     .javascript {
@@ -487,6 +487,11 @@ nav {
     nav {
         right: 5vh;
         top: 1vh;
+    }
+
+    .main-desc {
+        padding: 1px;
+    }
 }
 
 
