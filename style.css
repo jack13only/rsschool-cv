@@ -73,9 +73,10 @@ body {
 
 header {
     font-size: 32rem;
-    padding: 50px 0;
+    padding: 50px 0 30px 0;
     text-transform: uppercase;
     color: white;
+    position: relative;
 }
 
 h2 {
@@ -263,31 +264,65 @@ footer {
     color: black;
 }
 
-nav {
+.burger {
     transition: 0.3s ease-in-out;
-    position: fixed;
-    right: 8vh;
-    top: 2vh;
+    position: absolute;
+    right: 30px;
+    top: 64px;
     width: 100px;
     height: 30px; 
     text-align: left;
     z-index: 5;
+    font-size: 18rem;
 }
 
-.menu-box {
+.menu-line {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.menu-line-item {
+    font-size: 20rem;
+    text-align: center;
+}
+
+.menu-line-item > a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu-line-item:hover {
+    transition: 0.2s linear;
+    position: relative;
+    transform: scale(120%);
+    /* border: 1px solid black; */
+}
+
+.menu-item {
+    font-size: 15rem;
+    border-bottom: 3px white solid
+}
+
+.menu-item:last-child {
+    border-bottom:none;
+}
+
+.menu-box, .menu-line {
     list-style: none;
     cursor: pointer;
 }
 
 .menu-box > li {
-    background: rgba(63, 217, 255, 0.722);
+    background: rgba(63, 217, 255, 1);
     /* border: black 1px solid; */
     width: 130px;
     height: 30px;
     line-height: 30px;
     z-index: 5;
     padding-left: 10px;
-    margin-top: 3px;
+    /* margin-top: 3px; */
 }
 
 .menu-box > li > a {
@@ -310,7 +345,20 @@ nav {
     color: white;
 }
 
+.burger {
+    display: none;
+}
+
 @media screen and (max-width: 1024px) {
+
+    .non-burger {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
     .wrapper {
         width: 700px;
     }    
@@ -328,6 +376,10 @@ nav {
 
     .contacts {
         padding: 25px 0;
+    }
+
+    .contacts > li {
+        padding: 10px 1px 10px 1px;
     }
 
 }
@@ -432,6 +484,11 @@ nav {
         font-size: 10rem
     }
 
+    .burger {
+        right: 30px;
+        top: 17px;
+    }
+
 }
 
 @media screen and (max-width: 420px) {
@@ -498,9 +555,23 @@ nav {
         padding-left: 5px;
     }
 
-    nav {
-        right: 5vh;
-        top: 1vh;
+    .burger {
+        right: 1px;
+        top: 7px;
+        width: 90px;
+    }
+
+    .burger, .menu-item {
+        font-size: 11rem;
+    }
+
+    .menu-box > li, .menu-box {
+        width: 90px;
+        padding-left: 1px;
+    }
+
+    .menu-item {
+        padding-left: 1px;
     }
 
     .main-desc {
@@ -508,7 +579,7 @@ nav {
     }
 
     .lang-list {
-        font-size: 10rem;
+        font-size: 9rem;
         padding: 3px 1px 5px 20px;
     }
 
