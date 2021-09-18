@@ -1,0 +1,252 @@
+html, body {
+    height: 100%; 
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    position: relative;
+    background-color: rgb(238, 238, 238);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.wrapper-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.back-one {
+    height: 380px;
+    background-color: rgb(63, 217, 255);
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 900px;
+    position: relative;
+    z-index: 1;   
+    display: grid;
+    padding-bottom: 30px;
+}
+
+.main {
+    background-color: rgb(255, 255, 255);
+}
+
+.main {
+    display: flex;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.about-main, .edu-main, .skills-main, .projects-main, .code-main, .languages-main {
+    font-size: 1.3rem;
+    padding: 50px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.main-desc {
+    display: inline-block;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.main-photo {
+    width: 362px;
+    height: 343px;
+    flex-grow: 0;
+}
+
+header {
+    font-size: 2rem;
+    padding: 50px 0;
+    text-transform: uppercase;
+    color: white;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.main-p {
+    padding-bottom: 20px;
+    border-bottom: 5px rgb(63, 217, 255) solid;
+}
+
+.contacts {
+    padding: 20px;
+    margin-top: 40px;
+    list-style-type: none;
+    font-size: 1.3rem;    
+}
+
+.contacts > li {
+    font-weight: 600;
+    padding: 10px;
+}
+
+.contacts > li > a {
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s linear;
+}
+
+.contacts > li > a:hover {
+    color: rgb(63, 217, 255)
+}
+
+.about-header, .edu-header, .skills-header, .projects-header, .code-header, .languages-header {
+    font-size: 2rem;
+    padding: 50px 0;
+    text-transform: uppercase;
+    color: rgb(63, 217, 255);
+    text-align: center;
+}
+
+.about-main > p, .edu-main > ul > li {
+    padding-top: 10px;
+    list-style-type: none;
+}
+
+.skills-main > ul > li {
+    list-style-type: square;
+    padding-top: 15px;
+}
+
+.edu-main > ul > li:last-child {
+    padding-top: 35px;
+}
+
+.skills-main > ul > li > a, .skills-main > ul > li > p > a {
+    text-decoration: none;
+    color: black;
+}
+
+.skills-main > ul {
+    margin-left: 20px;
+}
+
+.about-main > p:first-child {
+    padding-top: 0;
+}
+
+.date {
+    font-size: 1.4rem;
+}
+
+.skills-tab {
+    padding-top: 10px;
+}
+
+.skills-main > ul > li > p > a > img:hover {
+    box-shadow: 0 0 10px rgb(63, 217, 255);
+}
+
+.skills-main > ul > li > a:hover, .skills-main > ul > li > p > a:hover {
+    text-shadow: 0 0 3px rgb(63, 217, 255);
+}
+
+.skills-main > ul > li > p > a > img, .skills-main > ul > li > a, .skills-main > ul > li > p > a {
+    transition: 0.3s linear;
+}
+
+.pr-wrapper {
+    display: flex;
+    padding: 10px 0;
+    color: black;
+    transition: 0.3s linear;
+}
+
+.projects-main > a {
+    text-decoration: none;
+}
+
+.pr-wrapper > div {
+    padding-left: 20px;
+}
+
+figure {
+    display: flex;
+    flex-flow: column;
+}
+
+.pr-1 {
+    width: 200px;
+    height: 113px;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+.pr-wrapper:hover {
+    transform: scale(110%);
+    box-shadow: 0 0 10px rgba(63, 217, 255);
+    padding: 10px;
+    cursor: pointer;
+}
+
+h5 {
+    padding-bottom: 15px;
+    font-size: 1.7rem;
+    color: rgb(63, 217, 255);
+    text-shadow: 0 0 2px black;
+}
+
+h6 {
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+h3, h1 {
+    text-shadow: 0 0 2px black;
+}
+
+.lang-list {
+    font-size: 1.5rem;
+    padding-left: 30px;
+}
+
+.lang-list > li {
+    padding-top: 10px;
+    font-weight: 400;
+}
+
+.lang-tested {
+    font-size: 0.8rem;
+    color: black;
+}
+
+.lang-tested:hover {
+    cursor: pointer;
+}
+
+footer {
+    padding: 50px 50px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+}    
+
+.rs-school {
+    width: 100px;
+}
+
+.right-footer {
+    line-height: 37px;
+}
+
+.right-footer > p > a {
+    color: black;
+}

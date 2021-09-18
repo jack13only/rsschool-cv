@@ -1,103 +1,215 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Yauheni Shatau</title>
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>CV Yauheni Shatau</title>
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
+  
+  <div class="wrapper-back">
+    <div class="back-one"></div>
+  </div>
 
-        
-        <header>
-            <img class="my-photo"
-                 src="img/my-photo.jpg" 
-                 alt="Моя фотография">
-            <h1>Yauheni Shatau</h1>
-        </header>
+  <div class="wrapper"> 
+    <header>
+      <h1>Yauheni Shatau</h1>
+      <h2>future frontend developer</h2>
+    </header>
+    <main class="main">
 
-        <section>
-            <h2 class="left header">Contacts</h2>
-                <ul class="contacts">
-                    <li>Phone: <a href="tel:+375259919565">+375 25 9919565</a></li>
-                    <li>Telegram: <a href="https://telegram.me/jack13only">@jack13only</a></li>
-                    <li>E-mail: <a href="mailto:jack13only@gmail.com">jack13only@gmail.com</a></li>
-                </ul>
+      <img class="main-photo" src="./assets/img/photo.jpg" alt="">
 
-            <h2 class="left header">Education and Work Experience</h2>
-                <ul>
-                    <li><span class="date">2007 - 2012</span> <p>Belarusian National Technical University, Faculty of Instrumentation, Technical Security</p></li>
-                    <li><span class="date">2012 - 2021</span> <p>Belarusian State Medical University, it engineer</p></li>
-                </ul>
-            
-            <h2 class="left header">Languages</h2>
-                <ul class="languages">
-                    <li>Russian</li>
-                    <li>Belorussian</li>
-                    <li>English (A2)</li>
-                </ul>
-        </section>
+      <div class="main-desc">
+        <ul class="contacts">
+          <li>Phone: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="tel:+375259919565">+375 25 9919565</a></li>
+          <li>Telegram: &nbsp&nbsp&nbsp&nbsp<a href="https://telegram.me/jack13only" target="_blank">@jack13only</a></li>
+          <li>E-mail: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="mailto:jack13only@gmail.com" target="_blank">jack13only@gmail.com</a></li>
+          <li>LinkedIn: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://www.linkedin.com/in/jack13only" target="_blank">Yauheni Shatau</a></li>
+        </ul>
+      </div>
 
-        <article>
-            <h3 class="right header">About me</h3>
-                <p>My goal for the next year is to become a front-end developer.</p>
-                <p>Open to new ideas, ready for self-study, have a desire to drastically change my life.</p>
-                <p>Have various hobbies such as drone racing and growing super hot peppers.</p>
-        
-            <h3 class="right header">Skills in programming</h3>
-                <p>Studied javascript on my own on <a href="https://learn.javascript.ru/">learn.javascript.ru</a></p>
-                <p>Solve tasks on <a href="https://www.codewars.com/users/jack13only">www.codewars.com</a></p>  
-                <img src="https://www.codewars.com/users/jack13only/badges/small" alt="codewars rank">
+    </main>
 
-            <h3 class="right header">Code example</h3>
-            <details>
-                <summary>View code example from codewars</summary>
-                <pre>  function anagrams(word, words) {
-    let sortedWord = word.split("").sort().join("");
-    let objSorted = {};
-    let result = [];
-   
-    for (let i = 0; i &lt; words.length; i++) {
-      let sorted = words[i].split("").sort().join("");
-      objSorted[words[i]] = sorted;
-    }
-    
-    for (let key in objSorted) {
-      if (objSorted[key] == sortedWord) {
-      result.push(key)
-      }
-    }
-    return result;
-  }</pre>
-            </details>
-
-        </article>
-
-        <div>
-            <hr class="blue-line">
-        </div>
-
-        <footer>
-            <div class="left-footer">
-                <a href="https://rs.school/js/"> 
-                   <img class="rs-school" 
-                        src="https://rs.school/images/rs_school_js.svg" 
-                        alt="rs_school"></a>
-            </div>
-
-            <div class="right-footer">
-                <p>Creation date <time datetime="2021-07-23">23.07.21</time>
-                   <a href="https://github.com/jack13only">GitHub</a> 
-                </p>
-            </div>
-        </footer>
-
-
+    <div class="about-header">
+      <h3>About me</h3>
     </div>
+
+    <section class="about-main">
+      <p>Hello!</p>
+      <p>I'm a beginning front-end developer.</p>
+      <p>My goal for the next year is to get a job as a junior developer.</p>
+      <p>I'm open to new ideas, ready for self-study, have a desire to drastically change my life.</p>
+      <p>I have various hobbies such as drone racing, fpv and growing super hot peppers.</p>
+    </section>
+
+    <div class="edu-header">
+      <h3>Education and Work Experience</h3>
+    </div>
+
+    <section class="edu-main">
+      <ul>
+        <li><h4 class="date">2007 - 2012</h4> <p>Belarusian National Technical University, Faculty of Instrumentation, Technical Security</p></li>
+        <li><h4 class="date">2021</h4> <p>RS School JS/FE stage 0</p></li>
+        <li><h4 class="date">2021 - until now</h4> <p>RS School JS/FE stage 1</p></li>
+        <li><h4 class="date">2011 - until now</h4> <p>Work in Belarusian State Medical University, IT engineer</p></li>
+      </ul>
+    </section>
+
+    <div class="skills-header">
+      <h3>Skills in programming</h3>
+    </div>
+
+    <section class="skills-main">
+      <ul>
+        <li>Studied javascript on my own on <a href="https://learn.javascript.ru/" target="_blank">learn.javascript.ru</a></li>
+        <li>
+          <p>Solve tasks on <a href="https://www.codewars.com/users/jack13only" target="_blank">www.codewars.com</a></p> 
+          <p class="skills-tab">
+            <a href="https://www.codewars.com/users/jack13only">
+              <img src="https://www.codewars.com/users/jack13only/badges/large" alt="codewars baidge">
+            </a>
+          </p>   
+        </li>
+        <li>
+          <p>Graduated from course RS School JS/FE Stage 0</p>
+          <p class="skills-tab">
+            <a href="https://app.rs.school/certificate/p0qcgt9e" target="_blank">
+              <img src="./assets/img/cert-rss.png" alt="cert">
+            </a>
+          </p>
+        </li>
+      </ul>
+    </section> 
+
+    <div class="projects-header">
+      <h3>My projects</h3>
+    </div>
+
+    <section class="projects-main">
+      <a 
+      href="https://rolling-scopes-school.github.io/jack13only-JSFEPRESCHOOL/whack-a-mole/"
+      target="_blank"
+      >
+        <div class="pr-wrapper">
+         <figure>
+            <img class="pr-1" src="./assets/img/pr-whack-a-rick.png" alt="">
+            <figcaption>whack-a-rick</figcaption>
+          </figure>  
+          <div>
+            <h5>Whack A Rick</h5>
+            <h6>Reaction speed game on the theme of Rick and Morty </h6>
+            <p>DOM, LocalStorage, querySelector, setTimeout</p>
+          </div>
+        </div>
+      </a>
+
+      <a 
+      href="https://rolling-scopes-school.github.io/jack13only-JSFEPRESCHOOL/js-clock/"
+      target="_blank"
+      >
+        <div class="pr-wrapper">
+         <figure>
+            <img class="pr-1" src="./assets/img/pr-js-clock.png" alt="">
+            <figcaption>js-clock</figcaption>
+          </figure>  
+          <div>
+            <h5>JS clock</h5>
+            <h6>Clock with dark theme and different time zones</h6>
+            <p>DOM, Date, querySelector, setTimeout</p>
+          </div>
+        </div>
+      </a>
+
+      <a 
+      href="https://rolling-scopes-school.github.io/jack13only-JSFEPRESCHOOL/vertical-slider/"
+      target="_blank"
+      >
+        <div class="pr-wrapper">
+         <figure>
+            <img class="pr-1" src="./assets/img/pr-vertical-slider.png" alt="">
+            <figcaption>vertical-slider</figcaption>
+          </figure>  
+          <div>
+            <h5>Vertical Slider</h5>
+            <h6>Endless slider</h6>
+            <p>DOM, mouseMove, querySelector, append/prepend</p>
+          </div>
+        </div>
+      </a>
+
+      <a 
+      href="https://rolling-scopes-school.github.io/jack13only-JSFEPRESCHOOL/museum/"
+      target="_blank"
+      >
+        <div class="pr-wrapper">
+         <figure>
+            <img class="pr-1" src="./assets/img/pr-museum.png" alt="">
+            <figcaption>museum</figcaption>
+          </figure>  
+          <div>
+            <h5>Museum</h5>
+            <h6>Site of the Louvre</h6>
+            <p>HTML + CSS + JS, Figma</p>
+          </div>
+        </div>
+      </a>
+
+    </section>   
+
+    <div class="code-header">
+      <h3>Code example</h3>
+    </div>
+
+    <article class="code-main">
+<pre><code class="javascript">function isIsogram(str) {
+  return new Set(str.toLowerCase()).size === str.length ? true : false
+}</code></pre>
+    </article>   
+
+    <div class="languages-header">
+      <h3>Languages</h3>
+    </div>
+
+    <section class="languages-main">
+      <ul class="lang-list">
+        <li>Russian</li>
+        <li>Belorussian</li>
+        <li>English (A2) 
+          <a 
+          class="lang-tested" 
+          href="./assets/img/lang-test.png"
+          target="_blank">
+            *tested by epam
+          </a>
+        </li>
+      </ul>
+    </section> 
+
+    <footer>
+      <div class="left-footer">
+        <a href="https://rs.school/js/"> 
+           <img class="rs-school" 
+                src="./assets/img/rs_school_js.svg" 
+                alt="rs_school"></a>
+      </div>
+
+      <div class="right-footer">
+        <p>Creation date <time datetime="2021-07-23">23.07.21</time>
+           <a href="https://github.com/jack13only" target="_blank">GitHub</a> 
+        </p>
+      </div>
+    </footer>
+  </div>
+
 </body>
 </html>
