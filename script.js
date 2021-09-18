@@ -7,14 +7,17 @@ function getMenuList() {
     menu.classList.toggle('open')
     if (menu.classList.contains('open')) {
         menu.innerHTML = 'Close'
-    } else menu.innerHTML = 'Menu'
+        menu.style.border = 'none'
+    } else {
+        menu.innerHTML = 'Menu'
+        menu.style.border = '1px black solid'
+    }    
     menuList.forEach((item, index) => {
         setTimeout(() => {
             item.classList.toggle('hidden')
         }, index * interval)
     })
 }
-
 
 menu.addEventListener('click', getMenuList)
 

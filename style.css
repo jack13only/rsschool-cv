@@ -7,6 +7,14 @@ html, body {
     background-color: rgb(238, 238, 238);
 }
 
+html {
+    font-size: 1px;
+}
+
+body {
+    font-size: 16rem;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -45,7 +53,7 @@ html, body {
 }
 
 .about-main, .edu-main, .skills-main, .projects-main, .code-main, .languages-main {
-    font-size: 1.3rem;
+    font-size: 21rem;
     padding: 50px;
     background-color: white;
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
@@ -64,7 +72,7 @@ html, body {
 }
 
 header {
-    font-size: 2rem;
+    font-size: 32rem;
     padding: 50px 0;
     text-transform: uppercase;
     color: white;
@@ -83,7 +91,7 @@ h2 {
     padding: 20px;
     margin-top: 40px;
     list-style-type: none;
-    font-size: 1.3rem;    
+    font-size: 21rem;    
 }
 
 .contacts > li {
@@ -103,7 +111,7 @@ h2 {
 }
 
 .about-header, .edu-header, .skills-header, .projects-header, .code-header, .languages-header {
-    font-size: 2rem;
+    font-size: 32rem;
     padding: 50px 0;
     text-transform: uppercase;
     color: rgb(63, 217, 255);
@@ -138,7 +146,7 @@ h2 {
 }
 
 .date {
-    font-size: 1.4rem;
+    font-size: 22.5rem;
 }
 
 .skills-tab {
@@ -199,14 +207,14 @@ figcaption {
 
 h5 {
     padding-bottom: 15px;
-    font-size: 1.7rem;
+    font-size: 27rem;
     color: rgb(63, 217, 255);
     text-shadow: 0 0 2px black;
 }
 
 h6 {
     padding-bottom: 10px;
-    font-size: 1.3rem;
+    font-size: 21rem;
     font-weight: 400;
 }
 
@@ -214,8 +222,12 @@ h3, h1 {
     text-shadow: 0 0 2px black;
 }
 
+h2 {
+    font-size: 30rem;
+}
+
 .lang-list {
-    font-size: 1.5rem;
+    font-size: 24rem;
     padding-left: 30px;
 }
 
@@ -225,7 +237,7 @@ h3, h1 {
 }
 
 .lang-tested {
-    font-size: 0.8rem;
+    font-size: 13rem;
     color: black;
 }
 
@@ -269,12 +281,13 @@ nav {
 
 .menu-box > li {
     background: rgba(63, 217, 255, 0.722);
-    border: black 1px solid;
+    /* border: black 1px solid; */
     width: 130px;
     height: 30px;
     line-height: 30px;
     z-index: 5;
     padding-left: 10px;
+    margin-top: 3px;
 }
 
 .menu-box > li > a {
@@ -288,9 +301,192 @@ nav {
 
 .menu-start-item {
     text-align: center;
+    border: 1px black solid
 }
 
 .open {
-    color: red;
+    color: white;
     font-weight: 700;
 }
+
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        width: 700px;
+    }    
+    .contacts, .about-main, .edu-main, .skills-main, .projects-main, .code-main, .lang-list {
+        font-size: 18rem;
+    }
+
+    .javascript {
+        font-size: 16rem;
+    }
+    
+    body {
+        font-size: 14rem;
+    }
+
+    .contacts {
+        padding: 25px 0;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .main-photo {
+        width: 200px;
+        height: 190px;
+    }
+
+    .contacts > li {
+        padding: 5px;
+    }
+
+    .skills-img-cw {
+        width: 300px;
+        height: 30px;
+    }
+
+    .wrapper {
+        width: 400px;
+    }    
+
+    .contacts {
+        margin-top: 10px;
+    }
+
+    .main-desc {
+        padding: 10px;
+    }
+
+    .languages-main, .about-main, .edu-main, .skills-main, .projects-main, .code-main, .lang-list {
+        font-size: 14rem;
+        padding: 10px;
+    }
+
+    .contacts {
+        font-size: 10rem;
+        padding: 10px;
+    }
+
+    .about-header, .edu-header, .skills-header, .projects-header, .code-header, .languages-header {
+        font-size: 22rem;
+        padding: 10px 0;
+    }
+
+    .javascript {
+        font-size: 12rem;
+    }
+    
+    body {
+        font-size: 12rem;
+    }
+
+    .contacts {
+        padding: 15px 0;
+    }
+
+    .date {
+        font-size: 16rem;
+    }
+
+    .pr-1 {
+        height: 68px;
+        width: 120px;
+    }
+
+    h6 {
+        font-size: 14rem;
+        padding-bottom: 5px
+    }
+
+    h5 {
+        font-size: 18rem;
+        padding-bottom: 5px
+    }
+
+    h2 {
+        font-size: 16rem;
+    }
+
+    header {
+        font-size: 16rem;
+        padding: 10px 0;
+    }
+
+    .pr-wrapper:hover {
+        transform: scale(101%);
+        box-shadow: 0 0 3px rgb(63, 217, 255);
+    }
+     
+    .back-one {
+        height: 160px;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    body {
+        font-size: 10rem;
+    }
+
+    .main-photo {
+        width: 120px;
+        height: 114px;
+    }
+
+    .contacts {
+        font-size: 10rem;
+        padding: 1px;
+    }
+
+    .languages-main, .about-main, .edu-main, .skills-main, .projects-main, .code-main, .lang-list {
+        font-size: 10rem;
+        padding: 1px;
+    }
+
+    .wrapper {
+        width: 320px;
+    }   
+
+    .javascript {
+        font-size: 9rem;
+    }
+
+    h6 {
+        font-size: 10rem;
+        padding-bottom: 1px
+    }
+
+    h5 {
+        font-size: 14rem;
+        padding-bottom: 1px
+    }
+
+    h2 {
+        font-size: 12rem;
+    }
+
+    header {
+        font-size: 12rem;
+        padding: 2px 0;
+    }
+
+    h3 {
+        font-size: 20rem;
+    }
+
+    .skills-img-cw {
+        width: 200px;
+        height: 20px;
+    }
+
+    .pr-wrapper > div{
+        padding-left: 5px;
+    }
+
+    nav {
+        right: 5vh;
+        top: 1vh;
+}
+
+
