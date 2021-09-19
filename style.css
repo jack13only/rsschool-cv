@@ -121,11 +121,12 @@ h2 {
 
 iframe {
     display: block;
-    padding-top: 30px ;
     margin: 0 auto;
+    margin-top: 30px;
     align-items: center;
     width: 800px;
-    height: 480px 
+    height: 450px; 
+    border: 0;
 }
 
 .about-main > p, .edu-main > ul > li {
@@ -413,7 +414,7 @@ footer {
 
     iframe {
         width: 600px;
-        height: 368px 
+        height: 338px 
     }
 
     .contacts, .about-main, .edu-main, .skills-main, .projects-main, .code-main, .lang-list {
@@ -463,7 +464,8 @@ footer {
 
     iframe {
         width: 380px;
-        height: 246px 
+        height: 214px;
+        margin-top: 20px;
     }
 
     .contacts {
@@ -583,9 +585,10 @@ footer {
     }   
 
     iframe {
-        padding: 10px 0 2px 0;
+        padding-bottom:2px;
+        margin-top: 10px;
         width: 296px;
-        height: 180px 
+        height: 167px 
     }
 
     .javascript {
