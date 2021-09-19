@@ -1,17 +1,22 @@
 const menu = document.querySelector('.menu-start-item')
+const oneLine = document.querySelector('.one-line')
+const twoLine = document.querySelector('.two-line')
+const threeLine = document.querySelector('.three-line')
+const fourLine = document.querySelector('.four-line')
 const menuList = document.querySelectorAll('.menu-item')
 
 let interval = 50
 
+function makeCancel() {
+    oneLine.classList.toggle('right-hidden')
+    fourLine.classList.toggle('right-hidden')
+    twoLine.classList.toggle('left-plus')
+    threeLine.classList.toggle('right-plus')
+}
+
 function getMenuList() {
     menu.classList.toggle('open')
-    if (menu.classList.contains('open')) {
-        menu.innerHTML = 'CLOSE'
-        menu.style.border = 'none'
-    } else {
-        menu.innerHTML = 'MENU'
-        menu.style.border = '1px white solid'
-    }    
+    makeCancel()
     menuList.forEach((item, index) => {
         setTimeout(() => {
             item.classList.toggle('hidden')
